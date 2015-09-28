@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binding>
+	<mapping name="products" class="com.belk.api.model.productdetails.ProductList">
+		<collection field="products"
+			item-type="com.belk.api.model.productdetails.ProductDetails" usage="optional"
+			create-type="java.util.ArrayList">
+		</collection>
+	</mapping>
+
+	<mapping ordered="false" abstract="true" class="com.belk.api.model.Product">
+		<value name="productCode" usage="optional" field="productCode" />
+	</mapping>
+
+
+	<mapping name="product"
+		class="com.belk.api.model.productdetails.ProductDetails" ordered="false"
+		extends="com.belk.api.model.Product">
+
+		<structure map-as="com.belk.api.model.Product" />
+
+		<value name="productId" usage="optional" field="productId" />
+		<value name="webId" usage="optional" field="webId" />
+		<value name="vendorId" usage="optional" field="vendorId" />
+		<value name="vendorPartNumber" usage="optional" field="vendorPartNumber" />
+		<collection field="recommendations" name="recommendations"
+			usage="optional" create-type="java.util.ArrayList"
+			item-type="com.belk.api.model.productdetails.ProductDetails" />
+		<value name="brand" usage="optional" field="brand" />
+		<value name="name" usage="optional" field="name" />
+		<value name="shortDescription" usage="optional" field="shortDescription" />
+		<value name="longDescription" usage="optional" field="longDescription" />
+		<collection field="productHierarchyAttributes" name="productHierarchyAttributes"
+			usage="optional" create-type="java.util.ArrayList"
+			item-type="com.belk.api.model.productdetails.ProductHierarchyAttribute" />
+		<collection field="productPrice" name="productPrice" usage="optional"
+			create-type="java.util.ArrayList" item-type="com.belk.api.model.productdetails.Price" />
+		<structure field="ratings" item-type="com.belk.api.model.productdetails.Ratings"
+			usage="optional"></structure>
+		<value name="productType" usage="optional" field="productType" />
+		<!--  <value name="isPattern" usage="optional" field="isPattern" />-->
+		<collection field="productFlags" name="product_flags"
+			usage="optional" create-type="java.util.ArrayList"
+			item-type="com.belk.api.model.productdetails.ProductFlag" />
+		<collection field="productMarketingAttributes" name="productMarketingAttributes"
+			usage="optional" create-type="java.util.ArrayList"
+			item-type="com.belk.api.model.productdetails.MarketingAttribute" />
+		<collection field="productAttributes" name="productAttributes"
+			usage="optional" create-type="java.util.ArrayList"
+			item-type="com.belk.api.model.productdetails.Attribute" />
+		<structure field="childProducts" item-type="com.belk.api.model.productdetails.ChildProductList"
+			usage="optional"></structure>
+		<collection field="promotions" name="promotions" usage="optional"
+			create-type="java.util.ArrayList" item-type="com.belk.api.model.productdetails.Promotion" />
+		<collection field="extendedAttributes" name="extendedAttributes"
+			usage="optional" create-type="java.util.ArrayList"
+			item-type="com.belk.api.model.productdetails.ExtendedAttribute" />
+		<collection field="skus" name="skus"
+			item-type="com.belk.api.model.productdetails.SKU" usage="optional"/>
+	</mapping>
+
+
+	<mapping name="productHierarchyAttribute"
+		class="com.belk.api.model.productdetails.ProductHierarchyAttribute">
+		<value style="attribute" name="key" field="key" />
+		<value style="attribute" name="value" field="value" />
+	</mapping>
+	<mapping name="price" class="com.belk.api.model.productdetails.Price">
+		<value style="attribute" name="key" field="key" usage="optional"/>
+		<value style="attribute" name="value" field="value" usage="optional"/>
+	</mapping>
+	<mapping name="ratings" class="com.belk.api.model.productdetails.Ratings">
+		<value name="overallRating" field="overallRating" usage="optional"/>
+		<value name="reviewCount" field="reviewCount" usage="optional"/>
+	</mapping>
+	<mapping name="product_flag" class="com.belk.api.model.productdetails.ProductFlag">
+		<value style="attribute" name="key" field="key" usage="optional"/>
+		<value style="attribute" name="value" field="value" usage="optional"/>
+	</mapping>
+	<mapping name="marketingAttribute"
+		class="com.belk.api.model.productdetails.MarketingAttribute">
+		<value style="attribute" name="key" field="key" usage="optional"/>
+		<value style="attribute" name="value" field="value" usage="optional"/>
+	</mapping>
+	<mapping name="attribute" class="com.belk.api.model.productdetails.Attribute">
+		<value style="attribute" name="key" field="key" usage="optional"/>
+		<value style="attribute" name="value" field="value" usage="optional"/>
+	</mapping>
+	<mapping name="childProducts" class="com.belk.api.model.productdetails.ChildProductList">
+		<value style="attribute" name="collectionType" field="collectionType" usage="optional" />
+		<collection field="childProduct" usage="optional"
+			create-type="java.util.ArrayList" item-type="com.belk.api.model.productdetails.ChildProduct" />
+	</mapping>
+	<mapping name="childProduct" class="com.belk.api.model.productdetails.ChildProduct">
+		<value style="attribute" name="key" field="key" usage="optional" />
+		<value style="attribute" name="value" field="value" usage="optional" />
+	</mapping>
+	<mapping name="promotion" class="com.belk.api.model.productdetails.Promotion">
+		<value style="attribute" name="key" field="key" />
+		<value style="attribute" name="value" field="value" />
+	</mapping>
+	<mapping name="extendedAttribute"
+		class="com.belk.api.model.productdetails.ExtendedAttribute">
+		<value style="attribute" name="key" field="key" />
+		<value style="attribute" name="value" field="value" />
+	</mapping>
+	
+	<mapping name="sku" class="com.belk.api.model.productdetails.SKU">
+		<value name="skuCode" field="skuCode" usage="optional" />
+		<value name="upcCode" field="upcCode"  usage="optional"/>
+		<value name="skuId" field="skuId"  usage="optional"/>
+		<value name="orin_sku" field="orinSku" usage="optional" />
+		<value name="skuShortDesc" field="skuShortDesc" usage="optional" />		
+		<collection field="skuMainAttributes" name="skuMainAttributes"
+			usage="optional" create-type="java.util.ArrayList"
+			item-type="com.belk.api.model.productdetails.SKUMain" />
+		<collection field="skuPrice" name="SKUPrice" usage="optional"
+			create-type="java.util.ArrayList" item-type="com.belk.api.model.productdetails.Price" />
+		<structure field="skuInventory"
+			item-type="com.belk.api.model.productdetails.SKUInventory" usage="optional"></structure>
+		<structure field="skuImages"
+			item-type="com.belk.api.model.productdetails.SKUImageList" usage="optional"></structure>
+		<collection field="extendedAttribute" name="extendedAttributes"
+			usage="optional" create-type="java.util.ArrayList"
+			item-type="com.belk.api.model.productdetails.ExtendedAttribute" />
+	</mapping>
+	<mapping name="skuMainAttribute" class="com.belk.api.model.productdetails.SKUMain">
+		<value style="attribute" name="key" field="key" usage="optional"/>
+		<value style="attribute" name="value" field="value" usage="optional" />
+	</mapping>
+	<mapping name="SKUInventory" class="com.belk.api.model.productdetails.SKUInventory">
+		<value name="inventoryLevel" field="inventoryLevel" usage="optional"/>
+		<value name="inventoryAvailable" field="inventoryAvailable" usage="optional"/>
+	</mapping>
+	<mapping name="SKUImages" class="com.belk.api.model.productdetails.SKUImageList">
+		<collection field="colorSwatchAttributes" usage="optional"
+			create-type="java.util.ArrayList" item-type="com.belk.api.model.productdetails.ColorSwatchAttribute" />
+		<collection field="productSKUImages" name="productSKUImages" usage="optional"
+			create-type="java.util.ArrayList" item-type="com.belk.api.model.productdetails.ProductSKUImage" />
+	</mapping>
+	<mapping name="colorSwatchAttribute" class="com.belk.api.model.productdetails.ColorSwatchAttribute">
+		<value style="attribute" name="key" field="key" usage="optional"/>
+		<value style="attribute" name="value" field="value" usage="optional" />
+	</mapping>
+	<mapping name="productSKUImage" class="com.belk.api.model.productdetails.ProductSKUImage">
+		<value style="attribute" name="defaultImage" field="defaultImage" usage="optional"/>
+		<collection field="skuImageAttribute" usage="optional"
+			create-type="java.util.ArrayList" item-type="com.belk.api.model.productdetails.SKUImage" />
+	</mapping>
+	<mapping name="skuImageAttribute" class="com.belk.api.model.productdetails.SKUImage">
+		<value style="attribute" name="key" field="key" usage="optional"/>
+		<value style="attribute" name="value" field="value" usage="optional"/>
+	</mapping>
+</binding>

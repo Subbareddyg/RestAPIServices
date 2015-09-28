@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:batch="http://www.springframework.org/schema/batch"
+	xsi:schemaLocation="http://www.springframework.org/schema/batch 
+	http://www.springframework.org/schema/batch/spring-batch-3.0.xsd
+	http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+
+	<!-- DataSource for connecting to Database used by belk.com -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+	</bean>
+	<bean id="dataSourceGenerator" class="com.belk.api.util.DataSourceGenerator">
+		<property name="dbConnectionLoader">
+			<ref bean="dbConnectionLoader" />
+		</property>
+		<property name="bmDataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>
+
+
+	<!-- Base DAO Definition -->
+	<bean id="baseDao" class="com.belk.api.dao.BaseDAO">
+		<constructor-arg index="0">
+			<ref bean="dataSourceGenerator" />
+		</constructor-arg>
+	</bean>
+
+
+	<!-- DAOs specific for tasks. Any new DAOs has to be added to this file 
+		that affects Admin layer alone. Do not initialize beans through annotations 
+		as we are performing a full package scan on com.belk.api, which will wire 
+		up such beans to all resources -->
+	<bean id="coremeticsDao" class="com.belk.api.dao.impl.CoremetricsDAOImpl">
+		<property name="baseDao">
+			<ref bean="baseDao" />
+		</property>
+	</bean>
+
+</beans>
+

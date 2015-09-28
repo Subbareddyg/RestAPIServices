@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binding>
+
+	<mapping name="search" class="com.belk.api.model.productsearch.Search">
+		<collection name="products" field="products"
+			item-type="com.belk.api.model.productsearch.ProductSearch" usage="optional"
+			create-type="java.util.ArrayList" />
+		<collection name="categories" field="categories"
+			item-type="com.belk.api.model.productsearch.ParentCategory" usage="optional"
+			create-type="java.util.ArrayList" />
+		<collection name="dimensions" field="dimensions"
+			item-type="com.belk.api.model.productsearch.Dimension" usage="optional"
+			create-type="java.util.ArrayList" />
+		<structure field="searchReport"
+			item-type="com.belk.api.model.productsearch.SearchReport" usage="optional" />
+	</mapping>
+
+
+	<!-- Mapping defintions for product search - Start -->
+
+	<mapping name="product" class="com.belk.api.model.productsearch.ProductSearch">
+		<value name="productCode" usage="optional" field="productCode" />
+		<value name="productId" usage="optional" field="productId" />
+		<value name="webId" usage="optional" field="webId" />
+		<value name="vendorId" usage="optional" field="vendorId" />
+		<value name="vendorPartNumber" usage="optional" field="vendorPartNumber" />
+		<value name="brand" usage="optional" field="brand" />
+		<value name="name" usage="optional" field="name" />
+		<collection name="productPrice" usage="optional" field="productPrice"
+			create-type="java.util.ArrayList" item-type="com.belk.api.model.productsearch.Price" />
+
+		<structure field="ratings" item-type="com.belk.api.model.productsearch.Ratings"
+			usage="optional" />
+
+		<value name="productType" usage="optional" field="productType" />
+		<collection name="product_flags" usage="optional" field="productFlags"
+			create-type="java.util.ArrayList" item-type="com.belk.api.model.productsearch.ProductFlag" />
+		<collection name="promotions" usage="optional" field="promotions"
+			create-type="java.util.ArrayList" item-type="com.belk.api.model.productsearch.Promotion" />
+		<collection name="productAttributes" usage="optional"
+			field="productAttributes" create-type="java.util.ArrayList"
+			item-type="com.belk.api.model.productsearch.Attribute" />
+		<structure field="childProducts" item-type="com.belk.api.model.productsearch.ChildProductList"
+			usage="optional"></structure>	
+		<collection name="extendedAttributes" usage="optional"
+			field="extendedAttributes" create-type="java.util.ArrayList"
+			item-type="com.belk.api.model.productsearch.Attribute" />
+	</mapping>
+
+	<mapping class="com.belk.api.model.productsearch.Price" name="price">
+		<value style="attribute" name="key" usage="optional" field="key" />
+		<value style="attribute" name="value" usage="optional" field="value" />
+	</mapping>
+
+	<mapping class="com.belk.api.model.productsearch.Ratings" name="ratings">
+		<value name="overallRating" usage="optional" field="overallRating" />
+		<value name="reviewCount" usage="optional" field="reviewCount" />
+	</mapping>
+
+	<mapping class="com.belk.api.model.productsearch.ProductFlag"
+		name="product_flag">
+		<value style="attribute" name="key" usage="optional" field="key" />
+		<value style="attribute" name="value" usage="optional" field="value" />
+	</mapping>
+
+	<mapping class="com.belk.api.model.productsearch.Promotion"
+		name="promotion">
+		<value style="attribute" name="key" usage="optional" field="key" />
+		<value style="attribute" name="value" usage="optional" field="value" />
+	</mapping>
+
+	<mapping name="childProducts" class="com.belk.api.model.productsearch.ChildProductList">
+		<value style="attribute" name="collectionType" field="collectionType" usage="optional" />
+		<collection field="childProduct" usage="optional"
+			create-type="java.util.ArrayList" item-type="com.belk.api.model.productsearch.ChildProduct" />
+	</mapping>
+	<mapping name="childProduct" class="com.belk.api.model.productsearch.ChildProduct">
+		<value style="attribute" name="key" field="key" usage="optional" />
+		<value style="attribute" name="value" field="value" usage="optional" />
+	</mapping>
+	
+	
+	<mapping class="com.belk.api.model.productsearch.Attribute"
+		name="attribute">
+		<value style="attribute" name="key" usage="optional" field="key" />
+		<value style="attribute" name="value" usage="optional" field="value" />
+	</mapping>
+
+	<!-- Mapping defintions for product search - End -->
+
+	<!-- Mapping defintions for Categories - Start -->
+
+	<mapping name="parentCategory" class="com.belk.api.model.productsearch.ParentCategory">
+
+		<collection field="categoryAttributes" name="categoryAttributes"
+			item-type="com.belk.api.model.productsearch.Attribute" usage="optional"
+			create-type="java.util.ArrayList" />
+
+		<collection field="subCategories" name="subCategories"
+			item-type="com.belk.api.model.productsearch.SubCategory" usage="optional"
+			create-type="java.util.ArrayList" />
+	</mapping>
+
+	<mapping class="com.belk.api.model.productsearch.SubCategory"
+		name="subCategory">
+		<collection field="categoryAttributes" name="categoryAttributes"
+			item-type="com.belk.api.model.productsearch.Attribute" usage="optional"
+			create-type="java.util.ArrayList" />
+	</mapping>
+
+
+	<!-- Mapping defintions for Categories - End -->
+
+	<!-- Mapping definitions for Dimensions - Start -->
+
+	<mapping name="dimension" class="com.belk.api.model.productsearch.Dimension">
+
+		<collection field="dimensionAttributes" name="dimensionAttributes"
+			item-type="com.belk.api.model.productsearch.Attribute" usage="optional"
+			create-type="java.util.ArrayList" />
+
+		<collection field="refinements" name="refinements"
+			item-type="com.belk.api.model.productsearch.Refinement" usage="optional"
+			create-type="java.util.ArrayList" />
+	</mapping>
+
+	<mapping class="com.belk.api.model.productsearch.Refinement"
+		name="refinement">
+		<collection field="refinementAttributes" name="refinementAttributes"
+			item-type="com.belk.api.model.productsearch.Attribute" usage="optional"
+			create-type="java.util.ArrayList" />
+	</mapping>
+
+
+	<!-- Mapping definitions for Dimensions - End -->
+
+
+	<!-- Mapping definitions for SearchReport - Start -->
+
+	<mapping class="com.belk.api.model.productsearch.SearchReport"
+		name="searchReport">
+		<value name="totalProducts" usage="optional" field="totalProducts" />
+		<value name="totalSkus" usage="optional" field="totalSkus" />
+		<value name="keyword" usage="optional" field="keyword" />
+		<value name="refinementId" usage="optional" field="refinementId" />
+		<value name="limit" usage="optional" field="limit" />
+		<value name="offset" usage="optional" field="offset" />
+		<collection name="searchAttributes" usage="optional" field="attributes"
+			create-type="java.util.ArrayList" item-type="com.belk.api.model.productsearch.SearchAttribute" />
+		<collection name="sortFields" usage="optional" field="sortFields"
+			create-type="java.util.ArrayList" item-type="java.lang.String">
+			<value name="sortField" />
+		</collection>
+	</mapping>
+
+
+	<mapping name="searchAttribute"
+		class="com.belk.api.model.productsearch.SearchAttribute">
+		<value name="key" usage="optional" field="key" />
+		<collection name="values" usage="optional" field="values"
+			create-type="java.util.ArrayList" item-type="java.lang.String">
+			<value name="value" />
+		</collection>
+	</mapping>
+
+
+	<!-- Mapping definitions for SearchReport - End -->
+
+
+
+</binding>

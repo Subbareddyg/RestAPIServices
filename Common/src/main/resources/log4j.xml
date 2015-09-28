@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	
+	<!-- New log entries to handle archiving -->
+
+	<appender class="org.apache.log4j.RollingFileAppender" name="Junit">
+		<param value="UTF-8" name="Encoding" />
+		<param value="${log4j.appender.Junit.ActiveFileName}" name="File" />
+		<param value="${MAX_BACKUP_INDEX}" name="MaxBackupIndex" />
+		<param value="${log4j.appender.Junit.MaxFileSize}" name="MaxFileSize" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param value="${LOG_CONVERSION_PATTERN}"
+				name="ConversionPattern" />
+		</layout>
+	</appender>
+	<!-- Ends here -->
+
+	<logger name="Junit">
+		<level value="${log4j.logger.level}" />
+		<appender-ref ref="Junit" />
+	</logger>
+
+</log4j:configuration>

@@ -1,0 +1,40 @@
+{
+   "stores":[
+      {
+         "id":"452",
+         "name":"BELK CHARLOTTE NC-SOUTHPK",
+         "address":{
+            "line1":"4400 SHARON ROAD",
+            "line2":"",
+            "line3":"",
+            "city":"CHARLOTTE",
+            "county":"",
+            "state":"NC",
+            "zip":"28211"
+         },
+         "phone":7043644251,
+         "latitude":35.1521258571405,
+         "longitude":-80.8279456284754,
+         "distance":4.940000000000000,
+         "hours":"M-TH 10-9 / F-S 10-10 / SUN 11-7"
+      },
+      {
+         "id":"553",
+         "name":"BELK PINEVILLE NC",
+         "address":{
+            "line1":"11009 CAROLINA PLACE PARKWAY",
+            "line2":"",
+            "line3":"",
+            "city":"PINEVILLE",
+            "county":"",
+            "state":"NC",
+            "zip":"28134"
+         },
+         "phone":7045439888,
+         "latitude":35.0831109496131,
+         "longitude":-80.8796131899593,
+         "distance":5.870000000000000,
+         "hours":"M-TH 10-9 / F-S 10-10 / SUN 11-7"
+      }
+   ]
+}

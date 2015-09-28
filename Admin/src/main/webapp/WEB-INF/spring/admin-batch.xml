@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:batch="http://www.springframework.org/schema/batch"
+	xsi:schemaLocation="http://www.springframework.org/schema/batch 
+	http://www.springframework.org/schema/batch/spring-batch-3.0.xsd
+	http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<!-- Transaction manager creation for job execution -->
+	<bean id="transactionManager"
+		class="org.springframework.batch.support.transaction.ResourcelessTransactionManager" />
+
+	<!-- Job Repository Definition -->
+	<bean id="jobRepository"
+		class="org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean">
+		<property name="transactionManager" ref="transactionManager" />
+	</bean>
+
+	<!-- Performing a JdbcPagingItemReader -->
+	<bean id="itemReader" class="com.belk.api.dao.util.CoremetricsJdbcPagingReader"
+		scope="step">
+		<property name="dataSource">
+			<bean factory-bean="dataSourceGenerator" factory-method="getBmDataSource">
+			</bean>
+		</property>
+		<property name="queryProvider">
+			<bean
+				class="org.springframework.batch.item.database.support.SqlPagingQueryProviderFactoryBean">
+				<property name="dataSource">
+					<bean factory-bean="dataSourceGenerator" factory-method="getBmDataSource">
+					</bean>
+				</property>
+				<property name="selectClause" value="SELECT * " />
+				<property name="fromClause"
+					value="FROM BM_EXTERNAL.COREMETRICS_RECOMMENDATIONS " />
+				<property name="whereClause" value="RECOMMENDATION_TYPE = 'ProductPage'" />
+				<property name="sortKey" value="TARGET_PRODUCT_ID" />
+			</bean>
+		</property>
+		<property name="pageSize" value="5000" />
+		<property name="rowMapper">
+			<bean class="com.belk.api.dao.util.CoremetricsRowMapper" />
+		</property>
+	</bean>
+
+	<!-- ItemWriter which will write the resultset to cache. Pass the Cache Manger Object for Cache setting-->
+	<bean id="coremetricsCacheWriter" class="com.belk.api.dao.util.CoremetricsCacheWriter">
+		<property name="cacheManager" ref="cacheManager" />
+	</bean>
+
+	<!-- Job Launcher -->
+	<bean id="jobLauncher"
+		class="org.springframework.batch.core.launch.support.SimpleJobLauncher">
+		<property name="jobRepository" ref="jobRepository" />
+	</bean>
+
+	<!-- Job instantiation. Modify commit interval for changes to maximum record 
+		fetch per query -->
+	<job id="coremetricsJob" xmlns="http://www.springframework.org/schema/batch">
+		<step id="step1">
+			<tasklet>
+				<chunk reader="itemReader" writer="coremetricsCacheWriter"
+					commit-interval="5000" />
+			</tasklet>
+		</step>
+	</job>
+
+</beans>	

@@ -1,0 +1,38 @@
+package com.belk.api.model.catalog;
+
+import junit.framework.TestCase;
+import org.junit.Test;
+
+/**
+ * 
+ * Unit Testing related to Attribute class The unit test cases evaluates the way
+ * the methods behave for the inputs given.
+ * 
+ * @author Mindtree
+ * @date 26 March, 2014
+ * 
+ */
+public class TestAttribute extends TestCase {
+
+	/**
+	 * Test method to test the method that set the key.
+	 */
+	@Test
+	public final void testSetKey() {
+		final Attribute attribute = new Attribute();
+		attribute.setKey("totalProducts");
+		assertTrue(attribute.getKey() == "totalProducts");
+	}
+
+	/**
+	 * Method to test the method that set the value.
+	 * 
+	 */
+	@Test
+	public final void testSetValue() {
+		final Attribute attribute = new Attribute();
+		attribute.setValue("38398");
+		assertTrue(attribute.getValue() == "38398");
+	}
+
+}

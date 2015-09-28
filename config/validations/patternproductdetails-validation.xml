@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceValidationConfig>
+	<validateResourceEnabled>true</validateResourceEnabled>
+	<parameterValidationMap>
+		<entry> <!-- Validation Rule Entries -->
+			<key>prdCode</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>								
+				<baseValidation>
+				<required>true</required>				
+				<nullCheck>true</nullCheck>
+				<emptyCheck>true</emptyCheck>
+				<maxLength>20</maxLength>				
+				</baseValidation>
+				<advanceValidation>
+				<required>true</required>
+				<regex>
+					<regexCheck>true</regexCheck>
+						<regex>^[a-zA-Z0-9]+([\s][a-zA-Z0-9]+)*$</regex>
+				</regex>
+				</advanceValidation>
+			</value>
+		</entry>
+		
+		<entry> <!-- Validation Rule Entries -->
+			<key>producttype</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>								
+				<baseValidation>
+				<required>true</required>
+				<nullCheck>true</nullCheck>
+				<emptyCheck>true</emptyCheck>				
+				<maxLength>15</maxLength>				
+				</baseValidation>
+				<advanceValidation>
+				<required>true</required>
+				<regex>
+					<regexCheck>true</regexCheck>
+						<regex>^[a-zA-Z]+([\s][a-zA-Z]+)*$</regex>
+				</regex>
+				</advanceValidation>
+			</value>
+		</entry>
+		
+	</parameterValidationMap>
+</resourceValidationConfig>

@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Author: Erik Johnsen */
+/* Creation Date: 8/25/2010 */
+
+/* @group slider */
+#slider-container {
+	width: 765px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom: 28px;
+	/*background: url('../images/common/bkgrd_sub_hero.png') no-repeat bottom;*/
+	margin: 0 0 0 10px;
+	position: relative;
+	/*overflow: hidden;*/
+}
+	
+.slider-title {
+    background-color: #E0F4FD;
+    color: #143984;
+    font-size: 18px;
+    height: 26px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    padding: 0 0 5px;
+    text-indent: 10px;
+    width: 764px;
+}
+.group-title {
+	font-size: 24px;
+	color: #333333;
+	width: 765px;
+	line-height: 36px;
+}
+.slider-content {
+	width: 765px;
+	height: 230px;
+	overflow:auto;
+	overflow-x: scroll;
+	overflow-y:hidden;
+	scrollbar-face-color: #003A99;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-3dlight-color: #999999;
+	scrollbar-shadow-color: #333333;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-arrow-color: #FFFFFF;
+	scrollbar-track-color: #E0F4FD; 
+}
+
+
+.slider-title span {
+	font-size:12px;
+	line-height:14px;
+	margin-top: 5px;
+}
+#slider-container ul {
+	list-style:none;
+	padding: 0;
+	margin: 0;
+}
+#slider-container ul li {
+	float:left;
+	padding: 0px;
+	margin: 0 3px 0 0;
+}
+#slider-container ul li img {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+#slider-width { width: 3825px; } /*default and max width of 25 items @ default 150px+3px right margin, is overwriten by javascript:sliderWidthSet(num, imgWidth) */
+.hidden {
+	visibility:hidden;
+	display:none;
+	clear:none;
+}
+.visible {
+	display:block;
+	visibility: visible;
+	clear: both;
+}
+
+.mask {
+	overflow: hidden;
+	width: 723px;
+}
+
+
+/*everyday value edit start
+#slider-container ul li div{float:left; width: 150px; height:218px;}
+#slider-container ul li div a{float:left; width: 130px; height: 218px; display:block;}
+#slider-container ul li img{float:left;}
+#slider-container ul li a.qv_link{visibility:hidden; display:none; height:0px; width:0px; font-size:0px;}
+/*everyday value edit end*/
+
+/* @end slider */
+ 
+body.home_page div#wrapper div#page div#header.newToBelk div.loggedOut div#newToBelk.newToBelkBar a#seeMoreLink.seeMoreNewBelk{
+	margin-top: 3px !important;
+	margin-bottom: 9px !important;
+	margin-left: 4px !important;
+}
+
+#newToBelk a.newBelkClose, #newToBelk a.newBelkClose:link, #newToBelk a.newBelkClose {
+	margin-top: 2px !important;	
+	margin-right: -9px !important;
+}
+
+body.home_page div#wrapper div#page div#header.newToBelk div.loggedOut div#newToBelk.newToBelkBar p.newText2{
+	margin-top: 2px !important;
+	margin-bottom: 9px !important;
+}
+
+body.home_page div#wrapper div#page div#header.newToBelk div.loggedOut div#newToBelk.newToBelkBar p.newText{
+	margin-top: 2px !important;
+	margin-bottom: 9x !important;
+}
+body.home_page div#wrapper div#page div#header.newToBelk div.loggedOut div#newToBelk.newToBelkBar{
+	min-height: 30px !important;
+}

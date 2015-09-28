@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceValidationConfig>
+	<validateResourceEnabled>true</validateResourceEnabled>
+	<parameterValidationMap>
+		<entry> <!-- Validation Rule Entries -->
+			<key>catalogid</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>
+				<mandatoryField>true</mandatoryField>				
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+                        <regex>888</regex>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>	
+		<entry> <!-- Validation Rule Entries -->
+			<key>showproduct</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>false</validateParameterEnabled>
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+                        <regex>^.*[tT][rR][uU][eE]|[fF][aA][lL][sS][eE].*$</regex>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>		
+	</parameterValidationMap>
+</resourceValidationConfig>

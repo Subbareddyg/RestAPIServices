@@ -1,0 +1,32 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+ 
+	<http auto-config="true">
+		<intercept-url pattern="/" access="ROLE_USER" />
+		<form-login login-page="/login" default-target-url="/getFileList"
+			authentication-failure-url="/loginfailed" 
+			authentication-success-handler-ref="loginAuthenticationSuccessHandler" />
+		<logout logout-success-url="/logout" />
+	</http>
+ 	
+ 	<beans:bean id="loginAuthenticationSuccessHandler"
+        class="com.belk.configui.utils.LoginAuthenticationSuccessHandler" />
+ 	
+	<authentication-manager>
+	  <authentication-provider>
+		<user-service>
+			<user name="admin" password="belk0421#" authorities="ROLE_USER" />
+			<user name="qatesting" password="mindtree2114#" authorities="ROLE_USER" />
+			<user name="rahul" password="belk1404#" authorities="ROLE_USER" />
+			<user name="subba" password="belk2104#" authorities="ROLE_USER" />
+			<user name="devteam" password="mindtree1421#" authorities="ROLE_USER" />
+		</user-service>
+	  </authentication-provider>
+	</authentication-manager>
+ 
+</beans:beans>

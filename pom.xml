@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.belk.api</groupId>
+	<artifactId>ApiServices</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+	<url>http://maven.apache.org</url>	
+		<build>
+		<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-checkstyle-plugin</artifactId>
+					<version>2.11</version>
+							<configuration>
+								<configLocation>/config/checkstyle/BelkServiceAPICheckStyle_2.0.xml</configLocation>
+								<failOnViolation>false</failOnViolation>
+								<failsOnError>false</failsOnError>							
+								<linkXRef>false</linkXRef>
+								<consoleOutput>true</consoleOutput>
+							</configuration>
+				</plugin>
+			</plugins>
+		</build>
+		<modules>
+			<module>Common</module>
+			<module>Domain</module>
+			<module>Adapter</module>
+			<!--<module>BlueMartiniAdapter</module>
+			<module>CategoryDetailsService</module>
+			<module>CategoryDetails</module>
+			<module>CategoryProductService</module>
+			<module>CategoryProduct</module>
+			<module>ProductSearchService</module>
+			<module>ProductSearch</module>
+			<module>ProductDetailsService</module>
+			<module>ProductDetails</module>
+			<module>PatternProductDetailsService</module>
+			<module>PatternProductDetails</module> -->
+			<module>AdminService</module>
+			<module>Admin</module>
+			<!--<module>CatalogService</module>
+			<module>Catalog</module>
+			<module>SecurityService</module>
+			<module>Security</module> 
+			<module>ProductDataService</module>
+			<module>ProductData</module> -->
+		</modules>
+		<properties>
+			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		</properties>
+	</project>

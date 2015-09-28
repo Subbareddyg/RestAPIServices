@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceValidationConfig>
+	<validateResourceEnabled>true</validateResourceEnabled>
+	<parameterValidationMap>
+		<entry> <!-- Validation Rule Entries -->
+			<key>vendorvpn</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->						
+				<validateParameterEnabled>true</validateParameterEnabled>		
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+					   <regex>^([a-zA-Z0-9]+(?=.*[|]))+([ \t|]?[a-zA-Z0-9]+)*$</regex>
+					   <splitter>,</splitter>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>
+
+		<entry> <!-- Validation Rule Entries -->
+			<key>vendorsku</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->						
+				<validateParameterEnabled>true</validateParameterEnabled>						
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+                       <regex>^[a-zA-Z0-9]+([\s][a-zA-Z0-9]+)*$</regex>						
+					   <splitter>,</splitter>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>
+		
+		<entry> <!-- Validation Rule Entries -->
+			<key>styleupc</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->						
+				<validateParameterEnabled>true</validateParameterEnabled>						
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+                       <regex>^[a-zA-Z0-9]+([\s][a-zA-Z0-9]+)*$</regex>						
+					   <splitter>,</splitter>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>	
+
+		<entry> <!-- Validation Rule Entries -->
+			<key>skuupc</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->						
+				<validateParameterEnabled>true</validateParameterEnabled>		
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+                       <regex>^[a-zA-Z0-9]+([\s][a-zA-Z0-9]+)*$</regex>						
+					   <splitter>,</splitter>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>
+
+		<entry> <!-- Validation Rule Entries -->
+			<key>productcode</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->						
+				<validateParameterEnabled>true</validateParameterEnabled>		
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+                       <regex>^[a-zA-Z0-9_]+([\s][a-zA-Z0-9_]+)*$</regex>						
+					   <splitter>,</splitter>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>		
+		
+		<entry> <!-- Validation Rule Entries -->
+			<key>options</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->						
+				<validateParameterEnabled>true</validateParameterEnabled>		
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+                       <regex>^[a-zA-Z0-9_]+([\s][a-zA-Z0-9]+)*$</regex>						
+					   <splitter>,</splitter>
+                </regex>
+                <optionsParamValidate>true</optionsParamValidate>
+                </advanceValidation>   				
+			</value>
+		</entry>	
+			
+			
+	</parameterValidationMap>
+</resourceValidationConfig>

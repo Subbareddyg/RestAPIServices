@@ -1,0 +1,1188 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* BEGIN - Generic dialog styles */
+div.ajaxContent.popupDialog p.message {
+	float:left;
+	clear:left;
+	display:inline-block;
+}
+
+div.ajaxContent.popupDialog p {
+	clear:left;
+}
+/* END   - Generic dialog styles */
+
+body.registry_items div.ajaxContent.popupDialog.addedToShoppingBag .wishlistProductList {
+	float: left;
+    margin: 20px 0 10px 10px !important;
+    max-height: 194px;
+    width: 545px !important;
+}
+
+div.ajaxContent.popupDialog div.websitePanel {
+	width:498px;
+	position: static !important;
+}
+
+div.ajaxContent.popupDialog div.websitePanel h2 {
+	margin:10px 0 10px 10px !important;
+}
+
+
+div.ajaxContent.popupDialog img.productImage {
+	float:left;
+	margin:0 20px 20px 0;
+}
+
+div.ajaxContent.popupDialog div.productDetails {
+	float: left;
+    margin:0;
+    width: 409px !important;
+}
+
+div.ajaxContent.popupDialog div.productDetails .item_total {
+	margin: 0 0 0 20px !important;	
+}
+
+div.ajaxContent.popupDialog div.productDetails h2 {
+	color: #333333;
+	display:inline;
+	margin-top:0px;
+	line-height:14px;
+        font-size: 14px;
+        font-weight: bolder;
+        margin: 0 0 0 20px;	
+}
+
+
+/* END   - Popup Dialog Form */
+
+
+
+div.ajaxContent.popupDialog div.scroll {
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+
+div.ajaxContent.popupDialog div.savingsDetails {
+    float: left;
+    margin: 0px 5px 0px -11px;
+    padding: 10px 10px 10px;
+    width: 246px;
+    background: transparent;
+    background-position: -9999px -9999px;
+    border: 0;
+    border-radius: 0;
+    height: auto !important;
+    min-height: 68px;
+}
+
+body.pickGift div.ajaxContent div.midPanels {
+	background: url(/media/images/new_checkout/midPanelTop.png) left top no-repeat;
+    display: block;
+    float: left;
+    margin: 0 0 10px 0px !important;
+    padding: 10px 0 0 10px;
+    width: 525px;
+    position: relative !important;
+}
+	
+div.ajaxContent div.midPanels {
+	background: url(/media/images/new_checkout/midPanelTop.png) left top no-repeat;
+    display: block;
+    float: left;
+    margin: 0 0 10px -12px !important;
+    padding: 10px 0 0 10px;
+    width: 525px;
+    position: relative !important;
+}
+
+body.shoppingBag div.ajaxContent div.midPanels {
+	margin: 0 0 10px 12px !important;
+}
+
+body.bridal div#modal_added_container.addToShoppingBagModalWrapper div.ajaxContent div.wishlistProductList{
+    margin: 0 0 10px 0 !important;
+}
+
+div.ajaxContent div.midPanelsCap {
+	display: block;
+	background: url(/media/images/new_checkout/midPanelBottom.png) left bottom no-repeat;
+	height: 20px;
+	width:	535px;
+	text-indent: -9999px;
+	float: left;
+	margin: 0 0 0 -10px;
+}
+
+body.shoppingBag div.ajaxContent.popupDialog div.savingsDetails {
+    margin: 0 5px 10px 2px;
+    width: 232px;
+}
+
+div.ajaxContent.popupDialog div.savingsDetails a {
+	color: #23408F;
+	display: block;
+	margin: 0 auto !important;
+	width: 240px;
+	text-align: center !important;
+	position: absolute;
+	bottom: 20px;
+}
+
+div.ajaxContent.popupDialog div.savingsDetails a:last {
+	text-align: left !important;
+}
+
+div.ajaxContent.popupDialog div.savingsDetails br {
+	display: none;
+	height: 0;
+	width: 0;
+}
+
+div.ajaxContent.popupDialog div.savingsDetails p br {
+	display: inline;
+}
+
+/* June checkout release - New Defect - Bug #425 - Selva - Back to Shopping link is not displayed properly in IE */
+div.ajaxContent.popupDialog div.savingsDetails p {
+	float: left !important;
+	margin: 0 auto 20px !important;
+	width: 240px !important;
+	display: block !important;
+}
+
+div.ajaxContent.popupDialog div.bagDetails p.first {
+	text-align: center;
+}
+
+body.pickGift div.ajaxContent.popupDialog div.bagDetails p.first {
+	 margin:0 0 0 15px !important;
+    text-align: center;
+    width: 220px;
+}
+
+div.ajaxContent.popupDialog div.savingsDetails p.last {
+	margin-bottom: 0 !important;
+}
+
+div.ajaxContent.popupDialog div.savingsDetails p.last a {
+	left: 15px;
+}
+body.pickGift div#shadowed-border.addedToShoppingBag {
+	max-width: 528px;
+    min-width: 528px;
+    border: 3px solid #EEEEEE;
+    padding: 10px 10px 20px 20px;
+    width:528px;
+}
+.addedToShoppingBag .boxy-inner .addedToShoppingBag{
+    width: auto;
+}
+
+.pickGift div#shadowed-border div.addedToShoppingBag div.savingsDetails p.last a.close{top:auto !important}
+div.ajaxContent.popupDialog div.savingsDetails .sale_price {
+	float: none !important;
+	display: inline !important;	
+}
+
+div.ajaxContent.popupDialog div.savingsDetails a.viewWishlistLink {
+	float: left;
+    padding: 0 0 0 10px;
+    text-align: left !important;
+    width: auto;
+    position: absolute !important;
+    bottom: 20px !important;
+    z-index: 100;
+}
+
+body.shoppingBag div.ajaxContent.popupDialog div.savingsDetails a.viewWishlistLink {
+	text-align: center !important;
+	float: none !important;
+	left: 95px !important;
+}
+
+body.shoppingBag div.ajaxContent.moveToWishListModalWrapper div.savingsDetails a.viewWishlistLink {
+	left: 5px !important;
+}
+
+body.shoppingBag div.ajaxContent.moveToWishListModalWrapper.popupDialog div.savingsDetails a.viewWishlistLink {
+	float: left !important;
+}
+	
+body.shoppingBag div.ajaxContent.moveToWishListModalWrapper .addedToWishlist div.savingsDetails a.viewWishlistLink {
+	float: left !important;
+}	
+	
+div.ajaxContent.popupDialog div.savingsDetails a.continueShopping {
+	float: right;
+	text-align: right !important;
+	width: auto !important;
+	position: absolute !important;
+	bottom: 20px !important;
+}
+
+div.ajaxContent.popupDialog div.savingsDetails p.checkoutMessage {
+	text-align: center;
+	margin: 0 0 10px !important;	
+}
+
+div.ajaxContent.popupDialog div.savingsDetails p.savingsMessage {
+	text-align: center;
+	margin: 0 0 30px;	
+	color: #333333;
+}
+
+div.ajaxContent.popupDialog div.savingsDetails span.spendMore {
+	font-weight:bold;
+}
+
+div.ajaxContent.popupDialog div.savingsDetails span.freeShipping {
+	font-size:11px;
+	color:#990000;
+	font-weight:bold;
+}
+
+div.ajaxContent.popupDialog div.bagDetails {
+	background: transparent;
+	background-position: -9999px -9999px;
+	float:left;
+	margin: 0 0 0 10px;
+    padding: 10px 10px 20px;
+	width:235px;
+	border: 0;
+    border-radius: 0;
+    height: auto !important;
+    position: static !important;
+    min-height: 55px;
+}
+
+body.pickGift div.ajaxContent.popupDialog div.bagDetails {
+	
+    padding: 0 !important;
+	
+}
+
+div.ajaxContent.popupDialog div.bagDetails .btn.big {
+	margin-top:20px;
+}
+
+popupDialog div.bagDetails p {
+	margin: 0 0 20px !important;	
+}
+
+div.ajaxContent.popupDialog div.bagDetails p.cartItems {
+	text-align: center;
+	margin: 0 0 19px;	
+}
+
+div.ajaxContent.popupDialog p.center {
+	text-align:center;
+}
+
+div.ajaxContent.popupDialog p.right {
+	text-align: right !important;
+}
+
+div.ajaxContent.popupDialog p.center a.btn {
+	float:none;
+	display:inline-block;
+}
+
+div.ajaxContent.popupDialog div.crossSells {
+	float:left;
+}
+
+div.ajaxContent.popupDialog small {
+	margin:10px 0 20px 0;
+}
+
+
+div.ajaxContent.popupDialog div.crossSells {
+	width:523px;
+	margin-bottom:0px;
+}
+
+body.details div.ajaxContent.popupDialog div.crossSells {
+	background: url(../images/new_checkout/bgCheckoutCell.gif) repeat-x scroll left top transparent;
+    margin: 0 0 0 -11px;
+    padding: 0;
+    width: 533px;
+}
+
+div.ajaxContent.popupDialog div.crossSells {
+	/* This is the color the cross sell backgrounds need to be STOP CHANGING IT. -thanks.*/
+	background: #F6F2EE !important;
+}
+
+body.registry_items div.ajaxContent.popupDialog div.crossSells {
+    background: none repeat scroll 0 0 #F6F2EE !important;
+    margin: 0 0 0 -12px;
+    width: 525px !important;
+}
+	
+div.ajaxContent.popupDialog div.crossSells li {
+	display:inline-block;
+	width:124px;
+	float:left;
+	text-align:center;
+	margin:0 23px 10px;
+}
+
+div.ajaxContent.popupDialog div.crossSells li span.title {
+	display:inline-block;
+	height:48px;
+}
+
+div.ajaxContent.popupDialog div.crossSells li span.price {
+	margin:0 5px;
+	color:#8f8e8e;
+}
+div.ajaxContent.popupDialog div.crossSells li span.sale {
+	margin:0 5px;	
+	color:#990000;
+}
+
+body.shoppingBag div.ajaxContent.popupDialog.addedToWishlist {
+    float: left;
+	margin: -15px 0 0 5px; /* Offset empty titlebar with neg top margin */
+    width: 596px;
+}
+
+body.shoppingBag div.ajaxContent.popupDialog.addedToWishlist a.close {
+	margin: 7px 10px 0 0;
+}
+
+body.shoppingBag .savingsDetails a.close {
+	margin: 0 10px 0 0;
+}
+body.shoppingBag div.ajaxContent.popupDialog.addedToWishlist .hd{
+	over-flow:hidden;
+	height:30px;
+	}
+
+body.shoppingBag div.ajaxContent.popupDialog.addedToWishlist .hd h4 {
+	left: 12px;
+	padding-bottom: 10px;/*QC 5965*/
+	position: relative;
+	z-index: 10;
+	top: 16px !important;
+}
+body.pickGift div.ajaxContent.addedToShoppingBag div.productList,
+div.ajaxContent.popupDialog.addedToShoppingBag div.productList,
+div.ajaxContent.popupDialog.addedToWishlist div.productList,
+div.ajaxContent.popupDialog.addedToWishlist div.shoppingBag {
+    float: left;
+    margin: 20px 0 10px !important;
+    max-height: 194px;
+    width: 532px !important;
+	/*overflow: visible; QC#990 - Need to show scroll bar */
+}
+
+body.shoppingBag div.ajaxContent.popupDialog.addedToWishlist div.productList,
+body.shoppingBag div.ajaxContent.popupDialog.addedToWishlist div.shoppingBag {
+	width: 540px !important;
+	margin: 20px 0px 10px;
+}
+
+body.pickGift div.ajaxContent.popupDialog.addedToShoppingBag div.productList,
+body.category div.ajaxContent.popupDialog.addedToShoppingBag div.productList,
+body.category div.ajaxContent.popupDialog.addedToWishlist div.productList,
+body.category div.ajaxContent.popupDialog.addedToWishlist div.shoppingBag,
+body.search div.ajaxContent.popupDialog.addedToShoppingBag div.productList,
+body.search div.ajaxContent.popupDialog.addedToWishlist div.productList,
+body.search div.ajaxContent.popupDialog.addedToWishlist div.shoppingBag {
+	width: 544px !important;	
+}
+
+body.search div.ajaxContent.popupDialog.addedToShoppingBag div.productList,
+body.search	div.ajaxContent.popupDialog.addedToWishlist div.productList {
+	margin: 20px 0 10px 10px !important;
+}
+
+
+body.category div.ajaxContent.popupDialog.addedToWishlist div.productList {
+	margin: 10px 0 10px 10px !important;
+}
+
+body.category div.ajaxContent.popupDialog.addedToWishlist div.productList li,
+body.search	div.ajaxContent.popupDialog.addedToWishlist div.productList li {
+	border: 1px solid #EEEEEE !important;
+}
+
+body.search div.ajaxContent.popupDialog div.crossSells,
+body.category  div.ajaxContent.popupDialog div.crossSells {
+	margin: 0 0 0 -14px !important;
+	width: 527px !important;
+}
+	
+body.details div.ajaxContent.popupDialog.addedToShoppingBag div.productList,
+body.details div.ajaxContent.popupDialog.addedToWishlist div.shoppingBag {
+	margin: 10px 0 10px 10px !important;
+	
+}
+body.pickGift div.ajaxContent.popupDialog.addedToShoppingBag div.productList,
+div.ajaxContent.popupDialog.addedToShoppingBag div.productList, div.ajaxContent.popupDialog.addedToWishlist div.productList, div.ajaxContent.popupDialog.addedToWishlist div.shoppingBag
+body.details div.ajaxContent.popupDialog.addedToWishlist div.productList {
+	margin: 10px 0 10px 10px !important
+}
+
+div.ajaxContent.popupDialog.addedToShoppingBag div.productList, div.ajaxContent.popupDialog.addedToWishlist div.productList, div.ajaxContent.popupDialog.addedToWishlist div.shoppingBag
+body.details div.ajaxContent.popupDialog.addedToWishlist div.productList {
+	margin: 10px 0 10px 10px !important
+}
+
+div.ajaxContent.popupDialog.addedToShoppingBag div.productList li,
+div.ajaxContent.popupDialog.addedToWishlist div.productList li {
+    padding: 20px 0 20px 20px;
+    width: 510px !important;
+}
+
+body.wishlist div.ajaxContent.popupDialog.addedToShoppingBag div.productList li,
+body.wishlist div.ajaxContent.popupDialog.addedToWishlist div.productList li {
+	padding: 20px 0 14px 20px;
+}
+
+body.pickGift div.ajaxContent.popupDialog.addedToShoppingBag  .wishlistProductList .wishlistPanel {
+	margin: 0 0 0 12px!important;
+}
+
+
+div.ajaxContent.popupDialog.addedToShoppingBag  .wishlistProductList .wishlistPanel,
+div.ajaxContent.popupDialog.addedToShoppingBag  .wishlistProductList .wishlistPanel {
+	margin: 0!important;
+}
+
+body.shoppingBag div.ajaxContent .productList.wishlistProductList .wishlistPanel {
+	border: 1px solid #eee;
+	width: 517px !important;
+	padding-left: 17px !important;	
+	margin: 0px 0px 8px 6px;
+}
+
+
+body.category div.ajaxContent.popupDialog.addedToShoppingBag  .wishlistProductList .wishlistPanel,
+body.category div.ajaxContent.popupDialog.addedToShoppingBag  .wishlistProductList .wishlistPanel {
+	/*margin: 0 0 10px 10px !important; QC 6134*/
+}
+/*body.pickGift #shadowed-border div.ajaxContent.addedToShoppingBag div.hd h4,
+body.category #modal_added_container div.ajaxContent.addedToShoppingBag div.hd h4,
+body.search #modal_added_container div.ajaxContent.addedToShoppingBag div.hd h4 { 
+	margin-left:-20px !important;
+	
+}
+*/ 
+div.ajaxContent.popupDialog.addedToShoppingBag div.productList li.wishlistPanel img,
+div.ajaxContent.popupDialog.addedToWishlist div.productList li.wishlistPanel img {
+	border: 1px solid #D4D2C5 !important;	
+}
+
+body.shoppingBag div.ajaxContent.popupDialog.addedToShoppingBag div.productList li, 
+body.shoppingBag div.ajaxContent.popupDialog.addedToWishlist div.productList li {
+    border-radius: 0 0 0 0 !important;
+    padding: 20px 0 20px 37px;
+    width: 515px !important;
+}
+
+div.ajaxContent.popupDialog.addedToShoppingBag div.productList div.productDetails p.pricing,
+div.ajaxContent.popupDialog.addedToWishlist div.productList div.productDetails p.pricing{
+	margin:0;
+	width: 240px;
+}
+
+div.ajaxContent.popupDialog.addedToShoppingBag div.productList div.productDetails p.sizeColor span.productSize,
+div.ajaxContent.popupDialog.addedToWishlist div.productList div.productDetails p.sizeColor span.productSize{
+	border-right: 1px solid #333333;
+	padding: 0 9px 0 0;
+	margin: 0 6px 0 0;
+}
+
+div.ajaxContent.popupDialog.addedToShoppingBag div.productList div.productDetails p.sizeColor,
+div.ajaxContent.popupDialog.addedToWishlist div.productList div.productDetails p.sizeColor{
+	float:left;
+	margin-top:10px;
+	white-space: nowrap;
+}
+
+div.ajaxContent.popupDialog.addedToShoppingBag div.productList div.productDetails h2,
+div.ajaxContent.popupDialog.addedToWishlist div.productList div.productDetails h2{
+	margin:0 0 10px 0 !important;
+	display:inline-block;
+	width: 400px;
+	line-height: 1.2;
+	border: 0 !important;
+}
+
+
+/* add to bag/wishlist/registry modal COPY CHANGES TO BRIDAL/vice versa*/
+#modal_added_container{
+  width: 528px;
+  left:47.5%;
+  top: 5%;
+  margin-left:-250px;
+  /*
+      _top: expression((document.documentElement.scrollTop
+        || document.body.scrollTop) + Math.round(30 *
+        (document.documentElement.offsetHeight
+        || document.body.clientHeight) / 100) + 'px'); 
+  
+  		Move into IE7 stylesheet.	
+  */
+  background: url('/media/images/new_checkout/bgCheckoutCell.gif') repeat-x scroll 0 0 #FFFFFF;
+  padding:10px 10px 20px 20px;
+  
+  	box-shadow: 0 0 15px 2px #303030;
+ 	-moz-box-shadow: 0 0 15px 2px #303030;
+	-webkit-box-shadow: 0 0 15px 2px #303030;
+  
+  	border: 3px solid #EEEEEE;
+  
+ 	border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   
+  }
+  
+  body.registry div#modal_added_container, body.bridal div#modal_added_container{
+  width:400px;
+  left:47.5%;
+  top:30%;
+  margin-left:0px;
+      _top: expression((document.documentElement.scrollTop
+        || document.body.scrollTop) + Math.round(30 *
+        (document.documentElement.offsetHeight
+        || document.body.clientHeight) / 100) + 'px');
+        
+  background: none;
+  
+  	box-shadow: none;
+ 	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+  
+  	border: none;
+  
+ 	border-radius: 0px;
+   -moz-border-radius: 0px;
+   -webkit-border-radius: 0px;
+   
+   /* Bring old IE into the 21st century */ 
+	behavior: none;      
+}
+
+body.registry div#modal_added_container.addToShoppingBagModalWrapper, body.bridal div#modal_added_container.addToShoppingBagModalWrapper{
+  width: 528px;
+  left:47.5%;
+  top: 5%;
+  margin-left:-250px;
+  /*
+      _top: expression((document.documentElement.scrollTop
+        || document.body.scrollTop) + Math.round(30 *
+        (document.documentElement.offsetHeight
+        || document.body.clientHeight) / 100) + 'px'); 
+  
+  		Move into IE7 stylesheet.	
+  */
+  background: url('/media/images/new_checkout/bgCheckoutCell.gif') repeat-x scroll 0 0 #FFFFFF;
+  padding:10px 10px 20px 20px;
+  
+  	box-shadow: 0 0 15px 2px #303030;
+ 	-moz-box-shadow: 0 0 15px 2px #303030;
+	-webkit-box-shadow: 0 0 15px 2px #303030;
+  
+  	border: 3px solid #EEEEEE;
+  
+ 	border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   
+  }
+  
+  body.bridal div#modal_added_container.addToShoppingBagModalWrapper{
+  	width:575px;/*QC 5968*/
+  }
+  
+body.shoppingBag #modal_added_container {
+	padding: 10px 10px 20px 0;
+	width: 565px; 
+}
+  
+body.shoppingBag #modal_added_container div.ajaxContent div.midPanels {  
+	margin: 0 0 10px 0; 
+}
+
+body.shoppingBag #modal_added_container div.ajaxContent div.crossSells {
+	width:526px !important;	
+}
+  
+ body.wishlist.div#modal_added_container {
+	padding: 8px 8px 20px 20px;
+ }
+ 
+ body.details #modal_added_container {
+ 	/* top: 160px; */
+ 	/* top: 30px !important; */
+ 	position: absolute !important;
+ } 
+  
+ .websitePanel {
+ border: 1px solid #EEEEEE;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ float: left;
+ background: url('/media/images/new_checkout/bgCheckoutCell.gif') repeat-x top left;
+ margin: 0 0 8px 0;
+ float: left;
+}
+
+div.ajaxContent.addedToShoppingBag div.hd h4,
+div.ajaxContent.addedToWishlist div.hd h4 {
+ color: #0072BC;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    margin: -8px 0 0 -10px;
+    width: 100%;
+    float:left
+    
+}
+
+body.wishlist div.ajaxContent.addedToWishlist div.hd h4 {
+	font-size: 16px;
+	padding: 10px 0 0 10px !important
+}
+  
+body.wishlist #quick_view .cartActions a.close {
+	margin: 12px 0 0;
+}
+
+body.wishlist div.ajaxContent a.close {
+	color: #23408F;
+	text-decoration: underline;
+}
+	
+body.wishlist div.ajaxContent a.emailClose {
+	margin: -18px 2px 0 0;
+}	
+	
+body.wishlist div.ajaxContent.popupDialog p {
+	margin: 0 0 7px;
+	width: 220px;
+}
+
+body.wishlist #modal_added_container {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+ 	box-shadow: 0 0 33px #000;
+	-moz-box-shadow: 0 0 33px #000;
+	-webkit-box-shadow: 0 0 33px #000;
+	position: absolute !important;
+	left: 50% !important;
+	display: inline !important;
+}
+
+body.wishlist .modalContainer {
+	/* QC - 4075 - Anitha Rosary - [WIsh List] - [Edit Item Modal] - From Edit item modal inside wishlist,
+	 any error message pop up is not getting displayed in right place
+	 - It is not visible in normal page view - It is visible in top of the page. (M.A.S.H) */		
+	/* Removing !important to allow override the position attribute */
+	position: absolute;	
+}
+ 
+body.wishlist .popupDialog {
+	
+}
+
+div.ajaxContent.addedToShoppingBag li.websitePanel p.pricing ,
+div.ajaxContent.addedToWishlist li.websitePanel p.pricing {
+    line-height: 18px;
+    display: block;
+    float: left;
+    width: 215px;
+}
+
+div.ajaxContent.addedToShoppingBag li.websitePanel p.pricing .savings,
+div.ajaxContent.addedToWishlist li.websitePanel p.pricing .savings {
+	color: #333333;
+	float: left;
+}
+
+body.registry_items .popupDialog .savings {
+	float: left !important;	
+}
+
+div.ajaxContent.addedToShoppingBag li.websitePanel p.pricing span.sale_price,
+div.ajaxContent.addedToWishlist li.websitePanel p.pricing span.sale_price{
+    color: #990000;
+    font-weight: bolder;
+    border-right: 1px solid black;
+    font-size: 12px;
+    padding: 0 10px 0 0;
+    margin: 0 10px 0 0;
+    float: left;
+    width: auto !important;
+}
+
+div.ajaxContent .checkoutMessage sale_price {
+	display: inline !important;
+	padding: 0 !important;
+	margin: 0 !important;	
+}
+
+div.ajaxContent.addedToShoppingBag li.websitePanel p.pricing span.original_price,
+div.ajaxContent.addedToWishlist li.websitePanel p.pricing span.original_price {
+    color: #8F8E8E;
+    padding-right: 5px;
+}
+
+div.ajaxContent.addedToShoppingBag li.websitePanel div.item_quantity,
+div.ajaxContent.addedToWishlist li.websitePanel div.item_quantity {
+	display: block;
+    float: left;
+    margin: 0;
+    line-height: 18px;
+}
+
+div.ajaxContent.addedToShoppingBag li.websitePanel div.item_total,
+div.ajaxContent.addedToWishlist li.websitePanel div.item_total {
+    display: block;
+    float: left;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+div.ajaxContent.addedToShoppingBag li.websitePanel div.item_total .wishlistTotalLabel,
+div.ajaxContent.addedToWishlist li.websitePanel div.item_total .wishlistTotalLabel {
+	font-weight: normal;
+}
+
+div.ajaxContent.addedToShoppingBag div.bagDetails a.checkout_btn,
+div.ajaxContent.addedToWishlist div.bagDetails a.checkout_btn {
+	margin: 0 0 0 37px !important;
+    background: url("/media/images/new_checkout/sprButtons_v2.gif") no-repeat scroll right -324px transparent;
+    height: 29px;
+    padding-right: 12px;
+    color: #222222;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: left;
+ 
+    position: absolute;
+    bottom: 20px;
+}
+
+body.details div.ajaxContent.addedToShoppingBag div.bagDetails a.checkout_btn,
+body.details div.ajaxContent.addedToWishlist div.bagDetails a.checkout_btn {
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;    
+    position: absolute;
+    bottom: 22px;
+}
+body.details div.ajaxContent.addedToShoppingBag div.bagDetails a.checkout_btn {
+	margin: 200 0 0 32px !important;
+    width: 160px;
+}	
+	
+div.ajaxContent.addedToShoppingBag div.bagDetails a.checkout_btn span,
+div.ajaxContent.addedToWishlist div.bagDetails a.checkout_btn span {
+    background: url('/media/images/new_checkout/sprButtons_v2.gif') no-repeat scroll 0 -120px transparent;
+    color: #23408F;
+    height: 29px;
+    line-height: 29px;
+    padding: 0 0 0 12px;
+    cursor: pointer;
+    display: block;
+    /*width: 100%;*/  /* Defect# 5326 fix */
+}	
+div.ajaxContent.addedToShoppingBag div.bagDetails a.checkout_btn span {
+	padding: 0 0 0 15px;
+	}
+/* @group shoppingBag */
+body.shoppingBag div.ft div.actions {
+	background: #FFF;
+	zoom:0;
+}
+
+body.shoppingBag div#applyCouponCodeDiv .component {
+	border:none;
+	background:#FFF;
+}
+
+body.shoppingBag div#applyCouponCodeDiv div.buttonRow.right a#aCancelLink {
+	float: right;
+	margin: 15px;
+	top:0px;
+}
+
+body.shoppingBag div#applyCouponCodeDiv div.buttonRow.right a.close {
+	float:right;
+	margin:0px;
+	padding:0px;
+}
+
+body.shoppingBag div#applyCouponCodeDiv .popupForm {
+	margin-left:-40px;
+}
+
+/* @group Add To Wishlist */
+
+.wishlistProductList {
+	position: relative;
+    width: 567px !important;
+    position: relative;
+    left: -20px;	
+    color: #333333;
+    margin: 20px 0 0 !important;
+}
+
+body.bridal .wishlistProductList, body.registry .wishlistProductList {
+    left: -10px;	
+}
+
+.moveToWishListModalWrapper .wishlistProductList {
+	left: 0 !important;	
+}
+
+.addedToWishlist a,
+.addedToWishlist a:link,
+.addedToWishlist a:visited {
+	color: #23408F;
+	text-decoration: underline;	
+}
+
+.addedToWishlist a.orangeButton {
+	text-decoration: none !important;	
+}
+
+.wishlistLabel {
+	font-weight: bold;	
+}
+
+.wishlistPanel {
+	width: 546px !important;
+}
+
+.wishlistProductList div.productDetails {
+	width: 454px !important;	
+}
+
+.wishlistProductList .productDetails h2 {
+    display: block !important;
+    font-size: 13px;
+    font-weight: bold;
+  /*  width: 181px !important; 
+  	Removing for defect 2904
+  */
+}
+
+.wishlistProductList .item_total {
+    margin: 0 0 0 57px !important;
+}
+
+.wishlistProductList .upcLabel {
+	float: left;
+	margin: 5px 0 0;	
+}
+
+.addedToWishlist a.checkout_btn {
+	display: block !important;
+	margin: 0 auto !important;
+	width: 152px !important;
+}
+
+div.crossSells {
+    border: 0 none !important;
+    padding: 5px !important;
+    width: 514px !important;	
+}
+
+body.wishlist div.crossSells {
+	width: 526px !important
+}
+
+body.details div.crossSells {
+	width: 524px !important
+}
+
+div.crossSells h1,
+div.crossSells h2,
+div.crossSells h3 {
+	border: 0 !important;
+}
+
+.addedToWishlist div.crossSells h2 {
+	font-size: 14px;
+	color: #333333;
+	font-weight: bold;
+}
+                                 
+
+/* @end Add To Wishlist */
+
+/* @group Add to Shopping Bag */
+
+#modal_add_to_bag #certonaPlaceHolderProducts h2 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+body.bridal #modal_add_to_bag {
+	margin: 10px 0 0 18px;	
+}
+
+
+body.bridal #modal_added_container.addToShoppingBagModalWrapper {
+	width: 575px;/*QC 5968*/
+}
+
+
+#modal_add_to_bag .crosssells li a {
+	color: #23408F;	
+}
+
+#modal_add_to_bag .crossSells li span.price {
+    color: #333333;
+}
+
+body.wishlist #modal_add_to_bag {
+	width: 535px;
+}
+
+body.wishlist #modal_add_to_bag .wishlistProductList {
+	 margin: 0 0 10px 10px !important;
+	 padding: 20px 0 0;
+}
+
+body.wishlist div.ajaxContent.popupDialog div.crossSells {
+    margin: 0 0 0 -13px;
+    width: 514px;
+}
+
+/* @end Add to Shopping Bag */
+
+#modal_added_container.wishListDeleteModalWrapper {
+	padding: 0 10px 10px !important;
+	position: relative;
+}
+
+#modal_added_container.wishListDeleteModalWrapper div.hd h4 {
+	padding: 1px 0 0;
+}
+
+#modal_added_container.wishListDeleteModalWrapper a.close {
+	margin: -2px -15px 0 0;	
+	font-weight: normal;
+}
+
+body.wishlist #modal_added_container.wishListDeleteModalWrapper #modal_add_to_bag .wishlistProductList {/* QC 6138*/
+    /*margin: 0 0 0 17px !important;*/
+    padding: 0px;
+	margin: 20px 0 !important;
+	left: 0px;
+}
+body.wishlist #modal_added_container.wishListDeleteModalWrapper {
+	width:544px;
+}
+
+#modal_added_container.wishListDeleteModalWrapper div.actions {
+    padding: 0 8px 0 0;
+}
+
+body.details #modal_added_container.addToShoppingBagModalWrapper {
+	position: absolute !important;
+}
+
+body.wishlist div#modal_added_container.modalContainer {
+	top: 40%;
+}
+
+body.wishlist div#modal_added_container.modalContainer div#modal_sent_to_friend.modal_added div.ajaxContent div.hd h4 {
+	color: #0072BC;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+
+div#modal_added_container.modalContainer.addToRegistryModalWrapper {
+	max-width:404px !important;
+	width:404px !important;
+}
+
+
+body.bridal div#modal_added_container.addToShoppingBagModalWrapper{
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+    padding-right: 0px !important;
+}
+
+body.bridal div#modal_added_container.addToShoppingBagModalWrapper div.savingsDetails p.last,body.registry div#modal_added_container.addToShoppingBagModalWrapper div.savingsDetails p.last{
+	padding-top:5px;	
+}
+#modal_added_container.addToRegistryModalWrapper div.modal_added{
+	width: 435px;
+}
+
+/* For Bridal Email Sent Modal (Make it look like legacy modals)*/
+/*div#modal_sent_to_friendReg {
+    background: none repeat scroll 0 0 #CACACA;
+    border: 1px solid #B7B7B7;
+    color: #333333;
+    font-size: 85%;
+    padding: 1px;
+    width: 435px;
+}
+
+div#modal_sent_to_friendReg .ajaxContent {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #E1E1E1;
+    padding: 1px;
+}
+
+div#modal_sent_to_friendReg .ajaxContent a#emailSentCloseLink{
+	float: right;
+}
+
+div#modal_sent_to_friendReg .ajaxContent div.bd{
+	padding-bottom: 10px !important;
+}*/
+/* End Bridal Email Sent Modal */
+body.details div#modal_added_container.modalContainer div#modal_add_to_wishlist.modalData div.ajaxContent div.midPanels div.savingsDetails p.savingsMessage span.freeShipText {
+    color: #990000 !important;
+    font-weight: bold !important;
+}
+/****************Find In store Modal******************/
+#modal_fis_container{
+	width: 600px;
+	left: 50%;
+	top: 15%;
+	margin-left: -290px;
+	_top: expression(( document.documentElement.scrollTop ||  
+		document.body.scrollTop) +   Math.round ( 15 * 
+  ( document.documentElement.offsetHeight ||  
+		document.body.clientHeight )/100 ) +   'px' );
+  background: url('/media/images/new_checkout/bgCheckoutCell.gif') repeat-x scroll 0 0 #FFFFFF;
+  padding:10px 10px 10px 10px;
+  box-shadow: 0 0 15px 2px #303030;
+  -moz-box-shadow: 0 0 15px 2px #303030;
+  -webkit-box-shadow: 0 0 15px 2px #303030;
+  border: 3px solid #EEEEEE;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore .find_in_store_container {
+	background: none;
+    border: none;
+    padding: 0px;
+}
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore .search_input {
+	border: 1px solid #EEEEEE;
+	padding: 10px;
+	margin: 0px;
+}
+#modal_find_in_store .websitePanel  {
+	width:580px;
+}
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore h4 {
+	color: #0072BC;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 22px;
+	margin: -8px 0 10px -10px;
+	width: 100%;
+	float: left;
+}
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore a.fis_close{
+	float: right;
+    margin-top: -12px;
+    color: #23408F;
+}
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore div.productDetails {
+	width:472px !important;
+}
+
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore div.productDetails h2 {
+	margin: 0 0 10px 0 !important;
+	display:block;
+	color: #333;
+	line-height: 14px;
+	font-size: 14px;
+	font-weight: bolder;
+}
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore div.productDetails p.description {
+	margin:0 0 10px 0;
+}
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore div.productDetails p.pricing {
+	width: 300px;
+	line-height:20px;/* defect 5946 fix */
+}
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore div.productDetails span.sale_price {
+	color: #900;
+	font-weight: bolder;
+	border-right: 1px solid black;
+	font-size: 12px;
+	padding: 0 10px 0 0;
+	margin: 0 10px 0 0;
+	/*float: left;*/
+	float: none;
+	width: auto !important;
+}
+#modal_find_in_store button.action_go {
+    background-image: url("https://a248.e.akamai.net/f/248/9086/10h/origin-d4.scene7.com/is/image/Belk/btnGo?P%5FGIF%5F128$");
+    border: medium none;
+    height: 21px;
+    text-indent: -9999px;
+    width: 24px;
+}
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore #find_in_stores_output .fis_buttons {
+	margin:10px 10px 0;
+	float:right;	
+}
+
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore div.find_in_store_container div.search_output ul.hdr {
+	background: none repeat scroll 0 0 transparent;
+    color: #0072BC;
+    border:none;
+    
+}
+div#modal_find_in_store div.ajaxContent.popupDialog.FindInStore div.find_in_store_container div.search_output ol.results {
+	border: 1px solid #ECECEC;
+	border-width:1px 0px 0px 0px;
+}
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore div.find_in_store_container div.search_output ol.results li.result {
+	border-bottom: 1px solid #ECECEC;
+	border-width:0px 0px 1px 0px;
+}
+body.details div#modal_fis_container.modalContainer div#modal_find_in_store.modal_added div.ajaxContent.FindInStore div.find_in_store_container div#find_in_stores_output.search_output div.fis_buttons button.fis_print, 
+	body.details div#modal_fis_container.modalContainer div#modal_find_in_store.modal_added div.ajaxContent.FindInStore div.find_in_store_container div#find_in_stores_output.search_output div.fis_buttons button.fis_close_btn {
+	background: url("/media/images/new_checkout/orangeBtnSmall.gif") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    font-size: 12px;
+    font-weight: normal;
+    height: 20px;
+    width: 93px !important;
+}
+
+/* added button.backToResults for same style as other buttons have and align a text middle to button */
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore #find_in_stores_output .fis_buttons button.fis_print div,
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore #find_in_stores_output .fis_buttons button.backToResults div,
+#modal_find_in_store div.ajaxContent.popupDialog.FindInStore #find_in_stores_output .fis_buttons button.fis_close_btn div {
+	line-height:19px;
+	color: #23408F;
+}
+
+div.ajaxContent.addedToShoppingBag div.hd h4{
+	margin-left:5px;
+    margin-top:5px;
+    }
+body.pickGift div.ajaxContent.addedToShoppingBag div.hd h4{
+	margin-left:10px;
+    }

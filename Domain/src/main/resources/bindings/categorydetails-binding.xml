@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binding>
+
+	<mapping name="categories" class="com.belk.api.model.categorydetails.Categories">
+		<collection field="categories"
+			item-type="com.belk.api.model.categorydetails.Category" usage="optional"
+			create-type="java.util.ArrayList" />
+	</mapping>
+
+
+
+	<mapping name="category" class="com.belk.api.model.categorydetails.Category">
+
+		<value name="categoryId" usage="optional" field="categoryId" />
+		<value name="name" usage="optional" field="name" />
+		<value name="parentCategoryId" usage="optional" field="parentCategoryId" />
+
+		<collection field="categoryAttributes" name="categoryAttributes"
+			item-type="com.belk.api.model.categorydetails.Attribute" usage="optional"
+			create-type="java.util.ArrayList" />
+
+		<collection field="subCategories" name="subCategories"
+			item-type="com.belk.api.model.categorydetails.SubCategory" usage="optional"
+			create-type="java.util.ArrayList" />
+	</mapping>
+
+
+	<mapping name="attribute" class="com.belk.api.model.categorydetails.Attribute">
+		<value style="attribute" name="key" usage="optional" field="key" />
+		<value style="attribute" name="value" usage="optional" field="value" />
+	</mapping>
+
+	<mapping name="subCategory" class="com.belk.api.model.categorydetails.SubCategory">
+		<value name="categoryId" usage="optional" field="categoryId" />
+		<value name="name" usage="optional" field="name" />
+		<value name="parentCategoryId" usage="optional" field="parentCategoryId" />
+
+		<collection field="categoryAttributes" name="categoryAttributes"
+			item-type="com.belk.api.model.categorydetails.Attribute" usage="optional"
+			create-type="java.util.ArrayList" />
+	</mapping>
+
+
+</binding>

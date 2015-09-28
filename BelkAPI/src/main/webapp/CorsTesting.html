@@ -1,0 +1,36 @@
+<html>
+	<head>
+	<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+		<script>
+	
+	
+		function clickclick(){
+		var myvalue = document.getElementById("urltext").value;
+		document.getElementById("responsearea").value="";
+		document.getElementById("click").value="Processing";
+		document.getElementById("click").disabled=true;
+			$.ajax({
+				type: 'GET',
+				url:  myvalue,
+				dataType: 'json',
+				success: function (data) {					
+					document.getElementById("responsearea").value = JSON.stringify(data);
+					document.getElementById("click").value="Click Here";					
+					document.getElementById("click").disabled=false;					
+				},
+				error: function (e) {
+					document.getElementById("responsearea").value = 'Input URL is invalid.Please give valid URL and try only with format=json';
+					document.getElementById("click").value="Click Here";
+					document.getElementById("click").disabled=false;
+				}
+			});
+		}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="urltext" size="150" value="http://api-dev:50091/v1/products/search?q=handbag&format=json">
+		<input type="button" id="click" name="click" value="Click Here" onclick="clickclick()"/>
+		<textarea rows="30" cols="150" id="responsearea">Please enter the url and do click button to get response here</textarea>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceValidationConfig>
+	<validateResourceEnabled>true</validateResourceEnabled>
+	<parameterValidationMap>
+		<entry> <!-- Validation Rule Entries -->
+			<key>catalogid</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>				
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+                        <regex>888</regex>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>
+		<entry> <!-- Validation Rule Entries -->
+			<key>offset</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>false</validateParameterEnabled>						
+			</value>
+		</entry>
+		<entry> <!-- Validation Rule Entries -->
+			<key>limit</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>								
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+					   <regex>^(0?[0-9]?[0-9]|1[0][0])$</regex>                      
+					   <splitter>,</splitter>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>		
+	</parameterValidationMap>
+</resourceValidationConfig>

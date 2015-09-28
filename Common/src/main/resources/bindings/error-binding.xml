@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binding>
+	<mapping class="com.belk.api.error.handler.ResponseDetails" name="response">
+		<value name="code" usage="optional" field="code" />
+		<value name="description" usage="optional" field="description" />
+		<value name="parametername" usage="optional" field="parametername" />
+		<value name="parametervalue" usage="optional" field="parametervalue" />
+	</mapping>
+</binding>

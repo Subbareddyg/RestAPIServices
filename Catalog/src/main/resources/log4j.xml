@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	
+	<!-- New log entries to handle archiving -->
+	
+	<appender name="Catalog" class="org.apache.log4j.rolling.RollingFileAppender">
+	
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern" value="${log4j.appender.Catalog.FileNamePattern}" />
+			<param name="ActiveFileName" value="${log4j.appender.Catalog.ActiveFileName}" />
+		</rollingPolicy>
+		<triggeringPolicy class="org.apache.log4j.rolling.SizeBasedTriggeringPolicy">
+			<param name="MaxFileSize" value="${log4j.appender.Catalog.MaxFileSize}" />
+		</triggeringPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="${LOG_CONVERSION_PATTERN}" />
+		</layout>
+	</appender>
+	<!-- Ends here -->
+
+	<!-- Enterprise Logger Configurations -->
+
+	<!-- Appender for EnterpriseCatalog -->
+	<appender name="AsyncCatalog" class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="500" />
+		<appender-ref ref="EnterpriseCatalog" />
+	</appender>
+
+	<appender name="EnterpriseCatalog"
+		class="com.belk.eil.logging.utils.appender.LogProcessorAppender">
+		<!-- General properties -->
+		<!-- Log level -->
+		<param name="Threshold" value="${enterprise.logger.threshold.catalog}" />
+		<!-- The name of the Java/J2EE application that uses the java Adapter -->
+		<param name="AppName" value="${enterprise.logger.appName.catalog}" />
+		<!-- The type of the message that will be published to the interface -->
+		<param name="MessageType" value="${enterprise.logger.MessageType}" />
+		<!-- A flag indicating whether the adapter should ignore or handle exceptions 
+			that occur within the adapter -->
+		<param name="SuppressExceptions" value="${enterprise.logger.supressExceptions}" />
+
+		<!-- HTTP interface properties -->
+
+		<!-- URL of the HTTP Interfaces -->
+		<param name="HTTPURL" value="${enterprise.logger.http.url}" />
+		<!-- The Time out for the HTTP call made to the HTTP interface -->
+		<param name="HTTPTimeoutInSecs" value="${enterprise.logger.http.timeout}" />
+		<!-- HTTP Authenticating username -->
+		<param name="HTTPBasicAuthUserName" value="" />
+		<!-- HTTP Authenticating password -->
+		<param name="HTTPBasicAuthPassword" value="" />
+
+		<!-- JMS interface properties -->
+
+		<!-- The name of the initial context factory required to connect to JMS -->
+		<param name="InitialContextFactoryName" value="${enterprise.logger.Initial.context.factoryName}" />
+		<!-- The JMS provider URL required for connectiong to JMS Interface -->
+		<param name="ProviderURL" value="${enterprise.logger.provider.url}" />
+
+		<!-- JMS interface - specify queue properties -->
+
+		<!-- The name of the JMS queue connection factory required for connecting 
+			to JMS Interface -->
+		<param name="QueueConnectionFactoryName" value="${enterprise.logger.Queue.Connection.FactoryName}" />
+		<!-- The name of the JMS queue required for connecting to JMS interface -->
+		<param name="QueueName" value="${enterprise.logger.Queue.Name}" />
+
+		<!-- Mail properties -->
+
+		<!-- The name of the SMTP mail server that can be used to send mails -->
+		<param name="MailHostName" value="${enterprise.logger.mail.hostname}" />
+		<!-- The port number of the SMTP mail server that can be used to send the 
+			mails -->
+		<param name="MailPortNumber" value="${enterprise.logger.mail.portnumber}" />
+		<!-- The flag indicating if the SMTP mail server requires authentication 
+			to connect and send mails -->
+		<param name="MailAuthEnabled" value="${enterprise.logger.mail.authEnabled}" />
+		<!-- The username that should be used for authenticating with the SMTP 
+			server to connect and send mails -->
+		<param name="MailAuthUserName" value="${enterprise.logger.mail.auth.userName}" />
+		<!-- The password that should be used for authenticating with the SMTP 
+			server to connect and send mails -->
+		<param name="MailAuthPassword" value="${enterprise.logger.mail.auth.password}" />
+		<!-- The mail Id that will be appear in the 'FROM' field of the alert mail 
+			that will be sent out by the adapter -->
+		<param name="MailFromId" value="${enterprise.logger.mail.mailfromid}" />
+		<!-- The comma seperated list of mail ids who will recieve the alert mails. 
+			These ids will appeaar in the 'TO' field of the mails -->
+		<param name="MailToIds" value="${enterprise.logger.mail.mailtoid}" />
+		<!-- The comma seperated list of mail ids who will recieve the alert mails. 
+			These ids will appeaar in the 'CC' field of the mails -->
+		<param name="MailCCIds" value="${enterprise.logger.mail.mailccid}" />
+
+		<!-- Backup file properties -->
+
+		<!-- The time interval after which the adapter will retry the BEAM log 
+			target if a log target fails -->
+		<param name="BackupFileRetryIntervalInSecs"
+			value="${enterprise.logger.backup.file.retry.intervalInSecs}" />
+		<!-- The absolute path of the backup file to which the adapter will write 
+			the logs if all the log target fail -->
+		<param name="BackupFileAbsolutePath"
+			value="${enterprise.logger.backup.file.retry.backupFileAbsolutePath.catalog}" />
+	</appender>
+
+	<!-- Enterprise Logger Configuration End -->
+
+	<!-- To invoke the Appenders asynchronously. Multiple AppenderRef elements 
+		can be configured. -->
+
+	<logger name="Catalog">
+		<level value="${log4j.logger.level}" />
+		<appender-ref ref="Catalog" />
+		<appender-ref ref="AsyncCatalog" />
+	</logger>
+
+</log4j:configuration>

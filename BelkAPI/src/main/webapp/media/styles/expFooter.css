@@ -1,0 +1,34 @@
+#expandableFooter{
+	clear:both;
+	float:left;
+	width:948px;
+	display:none;	
+}
+
+#expRow1{
+	clear:both;	
+}
+
+#expRow2{
+	clear:both;
+}
+
+#expandableFooter ul{
+	font-size:11px;
+	margin:0 auto;
+}
+
+#expRow1 ul{
+	width:810px;
+}
+
+#expRow2 ul{
+	width:700px;
+}
+
+#expandableFooter li{
+	border-right:1px solid #666666;
+	float:left;
+	margin:0 5px 0 0;
+	padding:0 5px 0 0;
+}

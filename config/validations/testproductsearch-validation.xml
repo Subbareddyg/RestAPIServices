@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceValidationConfig>
+	<validateResourceEnabled>true</validateResourceEnabled>
+	<parameterValidationMap>
+	    <entry> <!-- Validation Rule Entries -->
+			<key>q</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>
+				<baseValidation>
+				<required>true</required>
+				<nullCheck>true</nullCheck>
+				<emptyCheck>true</emptyCheck>
+				<maxLength>10</maxLength>
+				<range>
+					<rangeCheck>false</rangeCheck>
+					<min>5</min>
+					<max>8</max>
+				</range>
+				<emailCheck>false</emailCheck>				
+				<date>
+					<dateCheck>false</dateCheck>
+					<past>false</past>
+					<future>false</future>
+					<format>dd-mm-yyyy</format>
+				</date>
+				<onlyNumber>false</onlyNumber>
+				<numberAlphabet>false</numberAlphabet>
+				<onlyAlphabet>false</onlyAlphabet>
+				</baseValidation>				
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+					   <regex>^[a-zA-Z]+([\s][a-zA-Z]+)*$</regex>                        
+					   <splitter>,</splitter>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>
+
+		<entry> <!-- Validation Rule Entries -->
+			<key>dim</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>
+				<baseValidation>
+				<required>true</required>				
+				<onlyNumber>false</onlyNumber>
+				<onlyAlphabet>true</onlyAlphabet>
+				</baseValidation>
+			</value>
+		</entry>	
+
+		<entry> <!-- Validation Rule Entries -->
+			<key>limit</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>
+				<baseValidation>
+				<required>true</required>				
+				<onlyNumber>true</onlyNumber>
+				</baseValidation>
+			</value>
+		</entry>
+		
+		<entry> <!-- Validation Rule Entries -->
+			<key>sort</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>								
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+					   <regex>^[a-zA-Z-]+([\s][a-zA-Z-]+)*$</regex>                        
+					   <splitter>|</splitter>
+                </regex>
+				<sortParamValidate>true</sortParamValidate> 
+                </advanceValidation> 				
+			</value>
+		</entry>	
+	
+		<entry> <!-- Validation Rule Entries -->
+			<key>attr</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>								
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+					   <regex>^[a-zA-Z0-9:,]+([\s][a-zA-Z0-9:,]+)*$</regex>                        
+					   <splitter>|</splitter>
+                </regex>
+				<paramValueValidate>true</paramValueValidate>  	
+                </advanceValidation>							
+			</value>
+		</entry>
+
+		
+		
+		<entry> <!-- Validation Rule Entries -->
+			<key>offset</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>								
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+					   <regex>^[0-9]+([\s][0-9]+)*$</regex>                        
+					   <splitter>,</splitter>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>	
+		
+		<entry> <!-- Validation Rule Entries -->
+			<key>refinementid</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>								
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+					   <regex>^[a-zA-Z0-9]+([\s][a-zA-Z0-9]+)*$</regex>                        
+					   <splitter>,</splitter>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>	
+
+		<entry> <!-- Validation Rule Entries -->
+			<key>color</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>								
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+					   <regex>^[a-zA-Z]+([\s][a-zA-Z]+)*$</regex>                        
+					   <splitter>,</splitter>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>	
+		
+		<entry> <!-- Validation Rule Entries -->
+			<key>size</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>								
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+					   <regex>^[a-zA-Z0-9]+([\s][a-zA-Z0-9]+)*$</regex>                        
+					   <splitter>,</splitter>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>	
+		
+		<entry> <!-- Validation Rule Entries -->
+			<key>brand</key> <!-- Parameter Name -->
+			<value><!-- Validation Rules -->
+				<validateParameterEnabled>true</validateParameterEnabled>								
+				<advanceValidation>
+                <required>true</required>
+                <regex>
+                       <regexCheck>true</regexCheck>
+					   <regex>^[a-zA-Z0-9]+([\s][a-zA-Z0-9]+)*$</regex>                        
+					   <splitter>,</splitter>
+                </regex>
+                </advanceValidation>   				
+			</value>
+		</entry>
+				
+	</parameterValidationMap>
+</resourceValidationConfig>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binding>
+
+	<mapping name="categories" class="com.belk.api.model.categoryproduct.Categories">
+	       <collection field="category"
+			item-type="com.belk.api.model.categoryproduct.Category" usage="optional" create-type="java.util.ArrayList">
+			</collection>
+	</mapping>
+
+	<mapping name="category" class="com.belk.api.model.categoryproduct.Category">
+		<value name="categoryId" usage="optional" field="categoryId" />
+		<value name="name" usage="optional" field="name" />
+		<value name="parentCategoryId" usage="optional" field="parentCategoryId" />
+		<collection field="categoryAttributes" name="categoryAttributes"
+			item-type="com.belk.api.model.categoryproduct.Attribute" usage="optional"
+			create-type="java.util.ArrayList">
+		</collection>
+		<collection field="products" name="products"
+			item-type="com.belk.api.model.categoryproduct.ProductSearch" usage="optional"
+			create-type="java.util.ArrayList">
+		</collection>
+		
+	</mapping>
+	
+	<mapping class="com.belk.api.model.categoryproduct.Attribute"
+		name="attribute">
+		<value style="attribute" name="key" usage="optional" field="key" />
+		<value style="attribute" name="value" usage="optional" field="value" />
+	</mapping>
+
+    <mapping class="com.belk.api.model.categoryproduct.ProductSearch" name="product">
+		<value name="productCode" usage="optional" field="productCode" />		
+		<value name="productId" usage="optional" field="productId" />	
+		<value name="webId" usage="optional" field="webId" />
+	</mapping>
+
+</binding>

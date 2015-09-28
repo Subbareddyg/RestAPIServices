@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<validationConfig>
+	<apiServicesConfigMap>
+		<entry> <!-- Validation Rule Entries -->
+			<key>PRODUCT_SEARCH</key> <!-- Parameter Name -->
+			<value>true</value>
+		</entry>
+		<entry> <!-- Validation Rule Entries -->
+			<key>PRODUCT_DETAILS</key> <!-- Parameter Name -->
+			<value>true</value>
+		</entry>
+		<entry> <!-- Validation Rule Entries -->
+			<key>CATALOG</key> <!-- Parameter Name -->
+			<value>true</value>
+		</entry>
+		<entry> <!-- Validation Rule Entries -->
+			<key>CATEGORY_DETAILS</key> <!-- Parameter Name -->
+			<value>true</value>
+		</entry>
+		<entry> <!-- Validation Rule Entries -->
+			<key>CATEGORY_PRODUCT</key> <!-- Parameter Name -->
+			<value>true</value>
+		</entry>		
+		<entry> <!-- Validation Rule Entries -->
+			<key>COREMETRICS</key> <!-- Parameter Name -->
+			<value>true</value>
+		</entry>
+	</apiServicesConfigMap>
+	<validatorPathConfigMap>
+		<entry> <!-- Validator Config Path Entries -->
+			<key>v1/products/search</key> 
+			<value>productsearch-validation.xml</value>
+		</entry>
+		<entry> <!-- Validator Config Path Entries -->
+			<key>v1/products</key> 
+			<value>productdetails-validation.xml</value>
+		</entry>
+		<entry> <!-- Validator Config Path Entries -->
+			<key>v1/categories</key> 
+			<value>category-validation.xml</value>
+		</entry>
+		<entry> <!-- Validator Config Path Entries -->
+			<key>v1/catalog</key> 
+			<value>catalog-validation.xml</value>
+		</entry>
+		<entry> <!-- Validator Config Path Entries -->
+			<key>v1/products/recommendations/coremetrics</key> 
+			<value>coremetrics-validation.xml</value>
+		</entry>
+	</validatorPathConfigMap>
+</validationConfig>

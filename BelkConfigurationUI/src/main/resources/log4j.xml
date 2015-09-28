@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	
+	<!-- New log entries to handle archiving -->
+
+	<appender name="configuration_update" class="org.apache.log4j.rolling.RollingFileAppender">
+	
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			<param name="FileNamePattern"
+				value="${log4j.appender.ConfigurationUI.FileNamePattern}" />
+			<param name="ActiveFileName"
+				value="${log4j.appender.ConfigurationUI.ActiveFileName}" />
+		</rollingPolicy>
+		<triggeringPolicy class="org.apache.log4j.rolling.SizeBasedTriggeringPolicy">
+			<param name="MaxFileSize" value="${log4j.appender.ConfigurationUI.MaxFileSize}" />
+		</triggeringPolicy>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="${LOG_CONVERSION_PATTERN}" />
+		</layout>
+	</appender>
+	<!-- Ends here -->
+
+	<!-- To invoke the Appenders asynchronously. Multiple AppenderRef elements 
+		can be configured. -->
+
+	<logger name="configuration_update">
+		<level value="${log4j.logger.level}" />
+		<appender-ref ref="configuration_update" />
+	</logger>
+
+</log4j:configuration>

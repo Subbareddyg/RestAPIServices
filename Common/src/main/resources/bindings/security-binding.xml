@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binding>
+	<mapping class="com.belk.api.security.AuthenticationDetails" name="response">
+		<value name="authToken" usage="optional" field="authToken" />
+	</mapping>
+</binding>

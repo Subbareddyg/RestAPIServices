@@ -1,0 +1,97 @@
+{
+   "skus":[
+      {
+         "id":"217102745",
+         "legacyid":"0400684936563",
+         "vendorUpc":"0887044072749",
+         "stores":[
+            {
+               "id":"452",
+               "available":"X"
+            },
+            {
+               "id":"553",
+               "available":"X"
+            },
+            {
+               "id":"888",
+               "available":"N"
+            }
+         ]
+      }
+   ],
+   "storeInfo":[
+      {
+         "id":"452",
+         "name":"BELK SOUTHPARK MALL",
+         "address":{
+            "line1":"4400 SHARON ROAD",
+            "line2":"",
+            "line3":"",
+            "city":"CHARLOTTE",
+            "county":"",
+            "state":"NC",
+            "zip":"28211"
+         },
+         "phone":7043644251,
+         "latitude":35.1521258,
+         "longitude":-80.8279456,
+         "distance":4.94,
+         "hours":"M-SAT 10AM-9PM / SUNDAY 12PM-7PM"
+      },
+      {
+         "id":"553",
+         "name":"BELK CAROLINA PLACE MALL",
+         "address":{
+            "line1":"11009 CAROLINA PLACE PARKWAY",
+            "line2":"",
+            "line3":"",
+            "city":"PINEVILLE",
+            "county":"",
+            "state":"NC",
+            "zip":"28134"
+         },
+         "phone":7045439888,
+         "latitude":35.0831109,
+         "longitude":-80.8796131,
+         "distance":5.87,
+         "hours":"M-SAT 10AM-9PM / SUNDAY 12PM-7PM"
+      },
+	  {
+         "id":"554",
+         "name":"BELK CAROLINA PLACE MALL2",
+         "address":{
+            "line1":"11009 CAROLINA PLACE PARKWAY",
+            "line2":"",
+            "line3":"",
+            "city":"PINEVILLE",
+            "county":"",
+            "state":"NC",
+            "zip":"28134"
+         },
+         "phone":7045439888,
+         "latitude":35.0831109,
+         "longitude":-80.8796131,
+         "distance":5.87,
+         "hours":"M-SAT 10AM-9PM / SUNDAY 12PM-7PM"
+      },
+	  {
+         "id":"555",
+         "name":"BELK CAROLINA PLACE MALL3",
+         "address":{
+            "line1":"11009 CAROLINA PLACE PARKWAY",
+            "line2":"",
+            "line3":"",
+            "city":"PINEVILLE",
+            "county":"",
+            "state":"NC",
+            "zip":"28134"
+         },
+         "phone":7045439888,
+         "latitude":35.0831109,
+         "longitude":-80.8796131,
+         "distance":5.87,
+         "hours":"M-SAT 10AM-9PM / SUNDAY 12PM-7PM"
+      }
+   ]
+}

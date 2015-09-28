@@ -1,0 +1,100 @@
+.body
+{
+padding-left:30px;
+position: relative;
+background-color:#BCA9F5;
+}
+.heading
+{
+padding-bottom: 40px;
+}
+.headingfontstyle
+{
+color: rgb(152, 0, 0); 
+font-size: 35px; 
+}
+.subheadingfontstyle
+{
+font-size: 30px;
+}
+.inputBox
+{
+width: 350px; 
+height: 48px;
+padding-bottom: 0px;
+cursor: pointer;
+color: #3333FF;
+font-size: 20px;
+}
+.updateBtn
+{
+padding-bottom: 50px;
+}
+.tdstyle
+{
+width : 300px;
+}
+.tdChkboxstyle
+{
+width : 40px;
+}
+.resultFontStl
+{
+	color: #3333FF;
+	font-size: 15px;
+}
+.marginStl
+{
+margin-right: 155px;
+}
+.mouseStyle
+{
+cursor: pointer;
+}
+.updateBtn
+{
+padding-left: 145px; 
+padding-bottom: 50px;
+}
+.selctMsg
+{
+	color: red;
+}
+.BackBtnStl
+{
+	padding-left: 120px; 
+}
+.usrNameStl
+{
+	width: 100%;
+	padding-bottom: 40px;
+}
+.logoutLinkStl
+{
+	padding-left : 1000px;
+}
+.errorblock {
+	color: #ff0000;
+	background-color: #ffEEEE;
+	border: 3px solid #ff0000;
+	padding: 8px;
+	margin: 16px;
+}
+.inputBackgrnd
+{
+
+}
+.footerBody
+{
+background-color:#BCA9F5;
+}
+
+textarea {
+    border: 0 none white;
+    overflow: auto;
+    width: 650px;
+    height: 300px;
+    padding: 0;
+    
+    
+}
