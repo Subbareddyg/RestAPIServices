@@ -51,7 +51,7 @@ import com.belk.api.validators.BaseValidator;
  * complete catalog by directly retrieving the complete catalog xml/json
  * response from the cache.
  * 
- * @author Mindtree
+ 
  * @date Nov 06, 2013
  */
 @Path("/v1/catalog")
